@@ -1,6 +1,18 @@
-function add(num1, num2) {
-    return num1 + num2;
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 2] = "ADMIN";
+    Role[Role["USER"] = 1] = "USER";
+})(Role || (Role = {}));
+;
+var person = {
+    name: "chris",
+    age: 23,
+    hobbies: ["swim"],
+    role: 2
+};
+if (person.role === Role.USER) {
+    console.log("this is just user");
 }
-var num1 = 4;
-var num2 = 5;
-console.log(add(num1, num2));
+else {
+    console.log("This is admin");
+}
