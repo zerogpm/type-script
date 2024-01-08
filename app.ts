@@ -6,7 +6,7 @@ let person: {
     hobbies: string[],
     role: number
 } = {
-    name: "chris",
+    name: "chris su",
     age: 23,
     hobbies: ["swim"],
     role: 2
