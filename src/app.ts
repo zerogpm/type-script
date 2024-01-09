@@ -1,19 +1,13 @@
-enum Role { ADMIN = 2, USER = 1 };
-
-let person: {
-    name: string,
-    age: number,
-    hobbies: string[],
-    role: number
-} = {
-    name: "chris su",
-    age: 23,
-    hobbies: ["swim"],
-    role: 2
+class Department {
+    name:string;
+    constructor(n: string) {
+        this.name = n;
+    }
+    
+    describute() {
+        console.log(`we are ${this.name} department`);
+    }
 }
 
-if(person.role === Role.USER) {
-    console.log("this is just user")
-} else {
-    console.log("This is admin");
-}
+let some = new Department("accouting");
+some.describute();
