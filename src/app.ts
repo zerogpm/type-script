@@ -9,5 +9,5 @@ class Department {
     }
 }
 
-let some = new Department("accouting 1");
+let some = new Department("accouting");
 some.describute();
